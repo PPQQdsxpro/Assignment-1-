@@ -45,6 +45,8 @@ macOS / Linux / Codespaces：
 
 開啟 `output/results.html` 即可離線比較三組結果；點選詞語可查看對應設定的原文及前後句。`notes/reading_guide.html` 是十二段原文閱讀工作紙。
 
+閱讀工作紙現包含每段在原始 TXT 的核心行數、前後句範圍及建議通讀範圍，另有逐段分析提示。`notes/project_walkthrough.html` 是給初學者的流程及文件導讀；兩頁皆有同名 Markdown 版本。`output/source_line_map.json` 保存全部句子 ID 至原始 TXT 行數的對應。
+
 ## 方法與產出
 
 OpenCC t2s → 去除非正文資訊 → 按 。！？ 分句 → jieba（HMM=True，主要人物自訂詞典）→ 去標點 → 保留至少五詞的句子。停用詞與單字仍保留於句子中維持詞距；只透過 qhchina filters 從搭配詞結果排除。

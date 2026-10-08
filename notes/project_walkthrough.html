@@ -1,0 +1,227 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>這份研究是怎樣完成的？</title><style>body{max-width:960px;margin:40px auto;padding:0 24px;color:#203a36;background:#f7f4ed;font:17px/1.85 "Microsoft JhengHei",sans-serif}h1{font-size:30px}h2{margin-top:40px;border-bottom:2px solid #adc5b7}h3{margin-top:35px;color:#236453}table{border-collapse:collapse;width:100%;background:white}td,th{padding:9px;border:1px solid #cdd7ce}blockquote{background:#fff0c8;padding:6px 18px;margin:0}p{overflow-wrap:anywhere}@media print{body{background:white;font-size:11pt}h3{break-after:avoid}table{font-size:10pt}}</style><h1>這份家珍研究是怎樣完成的？簡明導讀</h1>
+<p>這是幫助你理解作業的說明文件，不是交給老師的正式報告。你目前已經有可重做的統計分析、三組結果和原文材料；文學解釋與最終報告仍待你完成。</p>
+<h2>先用一句話理解整個流程</h2>
+<p><strong>把小說整理成電腦能計算的詞語 → 找出經常出現在「家珍」附近的詞 → 比較三種範圍 → 回原文確認 → 由你解釋人物與方法的限制。</strong></p>
+<p>電腦負責計數和檢定。它不會自動知道誰在哭、誰躺在床上，也不能替你判斷家珍是否只有陪襯作用。這正是閱讀原文的重要性。</p>
+<h2>1. 我先保存原始小說</h2>
+<p>我把你提供的《余华_活着.txt》完整複製到 <code>data/huozhe_original.txt</code>，保留原始內容。來源如實記為「教師提供之課堂檔案」，沒有另編下載網址。</p>
+<p>閱讀工作紙的行數都指這份原始檔，從第一行起算，包括空白行。長段落在螢幕上折成幾行，仍可能只是原始檔的一行。使用編輯器的「前往行」功能可定位；例如第 978 行就是更換旗袍與粗布衣服的段落。</p>
+<h2>2. 整理文字，讓電腦能計算</h2>
+<p>我保留原檔，在分析副本上移除書名、章節標題及結尾宣傳，並保留章節資料供查找。先用 OpenCC 統一為簡體，再按「。！？ 」分句，用 jieba 分詞，去除標點。依課堂方法，只保留至少五詞的句子。</p>
+<p>分詞就是決定「哪些字合起來算一個詞」。例如「家珍坐在床上」應保留完整姓名「家珍」，不能把名字拆開。我加入十個主要人物姓名，並抽查分詞。早期分詞設定曾令部分其他人物姓名被拆開，修正後才產生正式結果；早期結果另存作過程紀錄。</p>
+<p><strong>停用詞沒有先從句子刪掉。</strong> 我只把它們從結果表排除。否則刪去「的」「了」等詞，會把原來較遠的詞拉近，改變五詞、十詞視窗。</p>
+<p>整理後正文有 74,916 個漢字；正式計算使用 2,411 句、49,097 詞。「家珍」保留 577 次，分布在 461 句。另有 49 個短句被排除，其中含三次「家珍」。少數疑似損壞文字保留並記錄，沒有猜測補字。</p>
+<h2>3. 同一份小說，計算三次</h2>
+<table>
+<thead>
+<tr>
+<th>設定</th>
+<th>怎樣找「附近」</th>
+<th>可以留意的問題</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>五詞視窗</td>
+<td>家珍左邊最多五詞、右邊最多五詞，不跨句</td>
+<td>較近的動作、物件及名字是甚麼？</td>
+</tr>
+<tr>
+<td>十詞視窗</td>
+<td>左右各最多十詞，不跨句</td>
+<td>稍遠的關係是否加入？是否也混入別人的描寫？</td>
+</tr>
+<tr>
+<td>句子法</td>
+<td>同一句出現家珍及候選詞</td>
+<td>能否看到較完整場景？同句的人物是否容易混淆？</td>
+</tr>
+</tbody>
+</table>
+<p>三次都使用 qhchina 的 <code>find_collocates</code>，條件相同：搭配詞至少兩字、排除停用詞、Fisher 檢定採 <code>greater</code>，保留原始 p 值小於 0.05 的詞。<code>greater</code> 是檢查「共現是否比獨立分布時預期的更多」。</p>
+<p>正式結果依觀察共現次數由多至少排列。五詞有 78 個合格詞，十詞有 107 個，句子法有 141 個。<strong>較多結果不等於更準確，也不等於家珍的人物空間比較大。</strong></p>
+<h2>4. 怎樣讀表格？</h2>
+<table>
+<thead>
+<tr>
+<th>欄位</th>
+<th>簡單意思</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>collocate</td>
+<td>搭配詞，例如「床上」</td>
+</tr>
+<tr>
+<td>obs_local／觀察值 O</td>
+<td>在指定語境內實際數到的共現數</td>
+</tr>
+<tr>
+<td>exp_local／期望值 E</td>
+<td>在兩者獨立的基準下，預期數到多少</td>
+</tr>
+<tr>
+<td>ratio_local／O÷E</td>
+<td>實際是預期的幾倍；不是人物重要性的分數</td>
+</tr>
+<tr>
+<td>obs_global</td>
+<td>候選詞在整個計算範圍出現多少</td>
+</tr>
+<tr>
+<td>p_value</td>
+<td>在獨立分布的假設及固定邊際下，出現目前或更強正向共現的概率</td>
+</tr>
+</tbody>
+</table>
+<p>例如五詞視窗的「床上」：O=14、E約4.72、O/E約2.97、p約0.000166。這說明它在家珍附近的共現有統計證據；<strong>不能直接推論家珍總在床上，更不能直接推論她被動。</strong> 原文中有一處躺在床上的其實是福貴的父親。</p>
+<p>視窗法的 O 計算詞的位置，同一位置即使被兩個家珍的視窗覆蓋也只算一次。句子法的 O 計算句子，一句出現多次也只算一句。因此兩種方法的 O 不能直接當同一單位比較。</p>
+<p>p 值不是「我的人物解釋出錯的概率」，也不是「結論有多少把握」。本次依作業設定用原始 p 值，沒有多重檢定校正；大量詞同時受檢定，仍可能出現偶然通過門檻的詞。</p>
+<h2>5. 我怎樣核對結果？</h2>
+<p>我用另一套獨立計數和 SciPy 的 Fisher 檢定核對三組已輸出的每一列，確認次數、期望值、篩選及排序。兩套檢定實作在非常小的 p 值上有數值差異，不影響這些詞是否通過 0.05。CSV 保留 qhchina 原始值；閱讀工作紙註明其 p 值使用獨立核對值。</p>
+<p>完整流程已重跑通過。報告草稿的兩頁 PDF 已檢查中文字及版面。比較頁的篩選和選詞功能通過程式檢查；尚未完成瀏覽器畫面核查。</p>
+<h2>6. 為甚麼選這十二段閱讀？</h2>
+<p>它們用來練習三類查核：相對穩定的搭配（衣服、床上）、不同範圍下的關係（鳳霞、春生），以及挑戰直覺的反例（流淚或躺床上的可能是別人）。這是有目的的閱讀選例，<strong>不是隨機樣本，也不是家珍全部情節</strong>。你應在結果頁查看更多例句，避免只用最符合自己想法的幾段。</p>
+<p>一個重要更正：先前工作紙把 C08-S0242 說成沒有家珍姓名，這是錯的；原文有「家珍在里面哭了」。現在改為檢查引語與姓名的距離、單字排除及語意限制，不能再把這句當成姓名漏算的證據。</p>
+<h2>7. 哪些文件現在要看？</h2>
+<table>
+<thead>
+<tr>
+<th>優先次序／文件</th>
+<th>用途</th>
+<th>你要做甚麼</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1：<code>notes/reading_guide.html</code></td>
+<td>十二段引文、原始 TXT 行數、逐段問題</td>
+<td>先讀原文，寫自己的筆記</td>
+</tr>
+<tr>
+<td>2：<code>output/results.html</code></td>
+<td>切換三組表、搜尋詞、點詞看語境</td>
+<td>核對你的例子，找其他場景及反例</td>
+</tr>
+<tr>
+<td>3：<code>notes/method_explained.md</code></td>
+<td>列聯表、計算單位及實際例子</td>
+<td>寫方法段時查閱，不必一開始背公式</td>
+</tr>
+<tr>
+<td>4：<code>report.md</code></td>
+<td>正式報告的待完成骨架</td>
+<td>把你的分析寫進去，完成2,500–3,000字要求</td>
+</tr>
+<tr>
+<td>5：<code>report.pdf</code>／<code>report.html</code></td>
+<td>由同一份報告文字產生的閱讀版本</td>
+<td>目前仍是草稿；改 Markdown 後需重新產生</td>
+</tr>
+<tr>
+<td><code>README.md</code></td>
+<td>整個倉庫的使用說明、来源、方法及 AI 聲明</td>
+<td>提交前核對是否符合實際做法</td>
+</tr>
+</tbody>
+</table>
+<p>HTML 是方便你用瀏覽器讀的頁面；Markdown（.md）是可編輯的純文字版本。閱讀工作紙的兩種格式內容相同；不是兩份不同分析。</p>
+<h2>8. 其他文件是做甚麼的？</h2>
+<table>
+<thead>
+<tr>
+<th>文件或資料夾</th>
+<th>用白話解釋</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>data/huozhe_original.txt</code></td>
+<td>完整原始小說，行數基準</td>
+</tr>
+<tr>
+<td><code>sentences.txt</code></td>
+<td>給統計程式用的分詞結果，每行一個保留句子；行數與原小說不同</td>
+</tr>
+<tr>
+<td><code>output/cleaned_text.txt</code></td>
+<td>去掉非正文內容的文字副本</td>
+</tr>
+<tr>
+<td><code>output/sentences.jsonl</code></td>
+<td>每句的章節、ID、文字、詞語及是否保留，方便追查</td>
+</tr>
+<tr>
+<td><code>output/source_line_map.json</code></td>
+<td>全部處理句子 ID 對應原始 TXT 起訖行數</td>
+</tr>
+<tr>
+<td><code>output/collocates_jiazhen_*.csv</code></td>
+<td>三份完整正式結果；可用試算表開啟</td>
+</tr>
+<tr>
+<td><code>output/corpus_stats.json</code></td>
+<td>字數、詞數、句數等實測規模</td>
+</tr>
+<tr>
+<td><code>output/cleaning_log.json</code></td>
+<td>刪除了甚麼、哪些字疑似損壞、姓名如何處理</td>
+</tr>
+<tr>
+<td><code>output/excluded_short_sentences.json</code></td>
+<td>被五詞規則排除的短句</td>
+</tr>
+<tr>
+<td><code>output/segmentation_check.csv</code></td>
+<td>十句姓名分詞抽查</td>
+</tr>
+<tr>
+<td><code>output/stopwords_used.txt</code></td>
+<td>這次實際使用的停用詞清單</td>
+</tr>
+<tr>
+<td><code>output/run_metadata.json</code></td>
+<td>三次設定及套件版本，讓別人知道怎樣重做</td>
+</tr>
+<tr>
+<td><code>output/verification.json</code></td>
+<td>獨立統計核對紀錄</td>
+</tr>
+<tr>
+<td><code>output/comparison.json</code></td>
+<td>三組前20名的交集與差異</td>
+</tr>
+<tr>
+<td><code>output/report_status.json</code></td>
+<td>草稿狀態、待填標記及字數估計；不是教師認可的最終字數</td>
+</tr>
+<tr>
+<td><code>output/exploratory_baseline/</code></td>
+<td>修正分詞前的歷史結果，不用來寫正式結果段</td>
+</tr>
+<tr>
+<td><code>notes/experiment_log.md</code></td>
+<td>為甚麼修正分詞及重新分析的紀錄</td>
+</tr>
+<tr>
+<td><code>.py</code>、<code>requirements.txt</code></td>
+<td>可重做的程式與套件版本，平日閱讀不必逐行看</td>
+</tr>
+</tbody>
+</table>
+<p>程式分工：<code>segment.py</code> 整理與分詞，<code>collocates.py</code> 計算，<code>verify.py</code> 核對，<code>make_report.py</code> 製作結果比較頁（不是替你寫報告），<code>build_materials.py</code> 製作閱讀工作紙，<code>render_report.py</code> 把你的報告轉成 PDF。<code>run_all.py</code> 串起分析步驟，不覆寫你的 <code>report.md</code>。</p>
+<h2>9. 你如何從材料走向論點？</h2>
+<p>可以從三條方向選兩條深入，無須全部採用：</p>
+<ol>
+<li><strong>物件與生活位置：</strong> 衣服在不同時期是身份、照料還是求生工具？床是身體限制，是否同時也是她勞動、參與家庭及說話的位置？</li>
+<li><strong>關係與判斷：</strong> 她如何照顧鳳霞，又如何被鳳霞照顧？她的質問是否改變福貴的行動？「商量」到底能證明多少？</li>
+<li><strong>敘述與可見性：</strong> 哪些是家珍直接說出的話，哪些是福貴替她描述？統計能指出反覆出現的關係，但能否量到她說話的分量、未說出口的想法或一個罕見而重要的場面？</li>
+</ol>
+<p>把人物空間理解成角色在敘事中獲得的呈現與注意力，有助於提問：讀者透過哪些行動、關係、描述及話語認識她？本研究只分析一個姓名的周邊詞，提供其中一個觀察角度，沒有直接量出全部人物空間，也沒有量出家珍相對其他人物的整體份額。</p>
+<p>一段分析可依這個順序寫：<strong>真實結果 → 原文行數與細節 → 你的解釋 → 另一種可能／限制 → 與人物空間的關係。</strong></p>
+<p>例如不要停在「床上顯著，所以她很被動」。先查哪幾處床上真正指家珍，再看她在床上做了甚麼、說了甚麼，最後判斷這些細節是否支持你的看法。</p>
+<h2>10. 目前完成到哪裏？</h2>
+<p>已完成：原文保存、清理分詞、三組分析、結果比較頁、統計核對、閱讀材料及報告骨架。先前版本已推送到你指定的公開 GitHub 倉庫。</p>
+<p>接下來：你提出兩個有原文支持的主要發現，選一項重要限制，完成報告；我可協助檢查數字、引文、論證及排版。最後才產生正式 PDF、更新 GitHub，並由你在 Moodle 提交倉庫網址及 PDF。目前尚未提交 Moodle。</p>
+<p>這次實際使用的是 Codex 協助程式、資料整理及文字說明，統計由 Python／qhchina 計算。最終 AI 聲明應按真實合作過程填寫。</p></html>
