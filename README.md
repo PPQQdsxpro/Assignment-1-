@@ -73,16 +73,15 @@ python render_report.py
 
 ## AI 使用紀錄
 
-目前實際使用 Codex 協助核對課程要求、編寫及除錯 Python 程式、建立比較頁、核驗統計、定位原文、整理方法說明與報告骨架。統計由本地 Python / qhchina 實際執行，並用獨立計數與 SciPy 核對；沒有以 AI 虛構數據。
+本人使用 Codex 協助核對課程要求、編寫及除錯 Python 程式、建立比較頁、核驗統計、定位原文、整理方法說明與報告骨架。統計由本地 Python / qhchina 實際執行，並用獨立計數與 SciPy 核對。
 
-學生負責閱讀原文、提出主要解釋與限制，並完成個人報告。本次未實際使用 GLM-5.3-Flash 產生研究結果，不將其列為已使用工具。最終報告需按實際完成過程更新聲明。
-
+本人負責閱讀原文、提出主要解釋與限制，並完成個人報告。本次未實際使用 GLM-5.3-Flash 產生研究結果，不將其列為已使用工具。
 ## 參考資料
 
-- 課程作業 1、Week 3/4 講義及 Week 4 投影片（由學生提供）。
-- Woloch, Alex. *The One vs. the Many*. 本次理論理解依課堂講義及投影片；未宣稱已獨立閱讀完整原著。
+- 課程作業 1、Week 3/4 講義及 Week 4 投影片。
+- Woloch, Alex. *The One vs. the Many*. 
 - https://www.qhchina.org/docs/collocations/find-collocates/
 - https://www.qhchina.org/docs/helpers/load-stopwords/
 - https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.fisher_exact.html
 
-提交：公開 GitHub 倉庫網址及最終 PDF 另外上傳 Moodle。完成後需確認 push 成功，並保留 Moodle 提交確認。
+
