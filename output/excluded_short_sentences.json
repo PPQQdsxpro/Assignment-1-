@@ -1,0 +1,598 @@
+[
+  {
+    "id": "C01-S0044",
+    "chapter": "第一章",
+    "text": "” “是的。",
+    "tokens": [
+      "是",
+      "的"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C01-S0045",
+    "chapter": "第一章",
+    "text": "”我点点头。",
+    "tokens": [
+      "我",
+      "点点头"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C02-S0049",
+    "chapter": "第二章",
+    "text": "她就叫我娘。",
+    "tokens": [
+      "她",
+      "就",
+      "叫",
+      "我娘"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C02-S0078",
+    "chapter": "第二章",
+    "text": "“福贵呵。",
+    "tokens": [
+      "福贵",
+      "呵"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C02-S0091",
+    "chapter": "第二章",
+    "text": "” 那人说：“不必了。",
+    "tokens": [
+      "那人",
+      "说",
+      "不必",
+      "了"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C02-S0186",
+    "chapter": "第二章",
+    "text": "” “还会是谁。",
+    "tokens": [
+      "还会",
+      "是",
+      "谁"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C03-S0044",
+    "chapter": "第三章",
+    "text": "” 我说：“租五亩。",
+    "tokens": [
+      "我",
+      "说",
+      "租",
+      "五亩"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C03-S0045",
+    "chapter": "第三章",
+    "text": "” “五亩？",
+    "tokens": [
+      "五亩"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C03-S0047",
+    "chapter": "第三章",
+    "text": "” 我说：“练练就行了。",
+    "tokens": [
+      "我",
+      "说",
+      "练练",
+      "就行了"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C03-S0120",
+    "chapter": "第三章",
+    "text": "家珍要好好补一补。",
+    "tokens": [
+      "家珍",
+      "要",
+      "好好",
+      "补一补"
+    ],
+    "kept": false,
+    "target_tokens": 1
+  },
+  {
+    "id": "C03-S0197",
+    "chapter": "第三章",
+    "text": "” “不，不。",
+    "tokens": [
+      "不",
+      "不"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C03-S0200",
+    "chapter": "第三章",
+    "text": "” “操你娘。",
+    "tokens": [
+      "操",
+      "你",
+      "娘"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C03-S0204",
+    "chapter": "第三章",
+    "text": "”他看到了我。",
+    "tokens": [
+      "他",
+      "看到",
+      "了",
+      "我"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C03-S0205",
+    "chapter": "第三章",
+    "text": "“还有你。",
+    "tokens": [
+      "还有",
+      "你"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C04-S0024",
+    "chapter": "第四章",
+    "text": "” 我说：“没有。",
+    "tokens": [
+      "我",
+      "说",
+      "没有"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C04-S0174",
+    "chapter": "第四章",
+    "text": "常言道，大难不死必有后福。",
+    "tokens": [
+      "常言道",
+      "大难不死",
+      "必有后福"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C04-S0285",
+    "chapter": "第四章",
+    "text": "” 有庆是个好孩子。",
+    "tokens": [
+      "有庆",
+      "是",
+      "个",
+      "好孩子"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C04-S0313",
+    "chapter": "第四章",
+    "text": "” 我说：“不行。",
+    "tokens": [
+      "我",
+      "说",
+      "不行"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C05-S0036",
+    "chapter": "第五章",
+    "text": "” “吃食堂。",
+    "tokens": [
+      "吃",
+      "食堂"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C05-S0037",
+    "chapter": "第五章",
+    "text": "”队长挥着手说。",
+    "tokens": [
+      "队长",
+      "挥",
+      "着手",
+      "说"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C05-S0049",
+    "chapter": "第五章",
+    "text": "这人民公社好不好？",
+    "tokens": [
+      "这",
+      "人民公社",
+      "好不好"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C05-S0068",
+    "chapter": "第五章",
+    "text": "” “好，好。",
+    "tokens": [
+      "好",
+      "好"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C05-S0069",
+    "chapter": "第五章",
+    "text": "”我连连点着头。",
+    "tokens": [
+      "我",
+      "连连",
+      "点着头"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C05-S0076",
+    "chapter": "第五章",
+    "text": "” “忙，忙。",
+    "tokens": [
+      "忙",
+      "忙"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C05-S0077",
+    "chapter": "第五章",
+    "text": "”王先生点着头说。",
+    "tokens": [
+      "王先生",
+      "点着头",
+      "说"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C05-S0080",
+    "chapter": "第五章",
+    "text": "” 家珍说：“是福贵。",
+    "tokens": [
+      "家珍",
+      "说",
+      "是",
+      "福贵"
+    ],
+    "kept": false,
+    "target_tokens": 1
+  },
+  {
+    "id": "C05-S0176",
+    "chapter": "第五章",
+    "text": "” 我说：“没煮成。",
+    "tokens": [
+      "我",
+      "说",
+      "没",
+      "煮成"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C05-S0222",
+    "chapter": "第五章",
+    "text": "” 我摇摇头，只好走开。",
+    "tokens": [
+      "我",
+      "摇摇头",
+      "只好",
+      "走开"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C05-S0226",
+    "chapter": "第五章",
+    "text": "” “能。",
+    "tokens": [
+      "能"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C05-S0227",
+    "chapter": "第五章",
+    "text": "”我说。",
+    "tokens": [
+      "我",
+      "说"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C05-S0231",
+    "chapter": "第五章",
+    "text": "” 我说：“好啊。",
+    "tokens": [
+      "我",
+      "说",
+      "好",
+      "啊"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C05-S0247",
+    "chapter": "第五章",
+    "text": "这是学校，不是乡下。",
+    "tokens": [
+      "这是",
+      "学校",
+      "不是",
+      "乡下"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C06-S0059",
+    "chapter": "第六章",
+    "text": "鸡都会跑？",
+    "tokens": [
+      "鸡",
+      "都",
+      "会",
+      "跑"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C06-S0100",
+    "chapter": "第六章",
+    "text": "我说： “知道。",
+    "tokens": [
+      "我",
+      "说",
+      "知道"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C06-S0265",
+    "chapter": "第六章",
+    "text": "血呢？",
+    "tokens": [
+      "血",
+      "呢"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C07-S0015",
+    "chapter": "第七章",
+    "text": "” 我说：“叫有庆。",
+    "tokens": [
+      "我",
+      "说",
+      "叫",
+      "有庆"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C07-S0209",
+    "chapter": "第七章",
+    "text": "” 春生点点头，走了。",
+    "tokens": [
+      "春生",
+      "点点头",
+      "走",
+      "了"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C07-S0263",
+    "chapter": "第七章",
+    "text": "” 家珍这才有些放心。",
+    "tokens": [
+      "家珍",
+      "这才",
+      "有些",
+      "放心"
+    ],
+    "kept": false,
+    "target_tokens": 1
+  },
+  {
+    "id": "C08-S0054",
+    "chapter": "第八章",
+    "text": "” 我说：“是啊。",
+    "tokens": [
+      "我",
+      "说",
+      "是",
+      "啊"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C08-S0064",
+    "chapter": "第八章",
+    "text": "” 他说：“不吃了。",
+    "tokens": [
+      "他",
+      "说",
+      "不吃",
+      "了"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C08-S0126",
+    "chapter": "第八章",
+    "text": "” 我点点头：“是啊。",
+    "tokens": [
+      "我",
+      "点点头",
+      "是",
+      "啊"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C08-S0155",
+    "chapter": "第八章",
+    "text": "” 二喜听后笑笑，没作声。",
+    "tokens": [
+      "二喜",
+      "听后",
+      "笑笑",
+      "没作声"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C08-S0167",
+    "chapter": "第八章",
+    "text": "队长呢？",
+    "tokens": [
+      "队长",
+      "呢"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C08-S0168",
+    "chapter": "第八章",
+    "text": "队长是谁？",
+    "tokens": [
+      "队长",
+      "是",
+      "谁"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C09-S0050",
+    "chapter": "第九章",
+    "text": "还是要小的？",
+    "tokens": [
+      "还是",
+      "要",
+      "小",
+      "的"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C09-S0069",
+    "chapter": "第九章",
+    "text": "二喜，我们回家吧。",
+    "tokens": [
+      "二喜",
+      "我们",
+      "回家吧"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C09-S0119",
+    "chapter": "第九章",
+    "text": "”福贵说。",
+    "tokens": [
+      "福贵",
+      "说"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C10-S0032",
+    "chapter": "第十章",
+    "text": "” 我点点头说：“好。",
+    "tokens": [
+      "我",
+      "点点头",
+      "说",
+      "好"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  },
+  {
+    "id": "C10-S0046",
+    "chapter": "第十章",
+    "text": "还是爹来领我？",
+    "tokens": [
+      "还是",
+      "爹来",
+      "领",
+      "我"
+    ],
+    "kept": false,
+    "target_tokens": 0
+  }
+]

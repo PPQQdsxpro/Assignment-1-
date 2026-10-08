@@ -1,0 +1,2 @@
+# Preserve exact corpus and generated-file bytes across operating systems.
+* -text

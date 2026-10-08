@@ -1,0 +1,106 @@
+{
+  "removed": [
+    {
+      "reason": "front_matter",
+      "text": "『活着/作者:余华』"
+    },
+    {
+      "reason": "end_marker_and_advertisement",
+      "text": "=已完结=\n更多电子书请访问:http://www.ixdzs.com,手机访问:http://m.ixdzs.com\n"
+    }
+  ],
+  "chapter_headings_excluded": [
+    "第一章",
+    "第二章",
+    "第三章",
+    "第四章",
+    "第五章",
+    "第六章",
+    "第七章",
+    "第八章",
+    "第九章",
+    "第十章"
+  ],
+  "suspected_corruption_preserved": [
+    {
+      "id": "C01-S0087",
+      "chapter": "第一章",
+      "text": "赌博就完全不一样了，*沂怯滞纯煊纸粽牛乇鹗悄歉鼋*张，有一股叫我说不出来的舒坦。",
+      "action": "preserved, not guessed or silently corrected"
+    },
+    {
+      "id": "C01-S0192",
+      "chapter": "第一章",
+      "text": "我在青楼常和龙二他们赌，有输*杏晕易*觉得自己没怎么输，其实我赢的都是小钱，输掉的倒是大钱，我还蒙在鼓里，以为自己马上就要光耀祖宗了。",
+      "action": "preserved, not guessed or silently corrected"
+    },
+    {
+      "id": "C02-S0016",
+      "chapter": "第二章",
+      "text": "轮到龙二时，龙二将那颗骰子放在七点上，这小子伸出手掌使劲一拍，喊了一** “七点。",
+      "action": "preserved, not guessed or silently corrected"
+    },
+    {
+      "id": "C02-S0071",
+      "chapter": "第二章",
+      "text": "” 第三天，我爹在自己屋里接待客人，他响亮地咳嗽着，一旦说话时声音又低得*坏健*到了晚上的时候，我娘走过来对我说，爹叫我过去。",
+      "action": "preserved, not guessed or silently corrected"
+    },
+    {
+      "id": "C03-S0093",
+      "chapter": "第三章",
+      "text": "我和娘商量着把长根留在家里，这样一来*兆踊岣*苦，我对娘说： “苦也要把他留下，我们每人剩两口饭也就养活他了。",
+      "action": "preserved, not guessed or silently corrected"
+    },
+    {
+      "id": "C03-S0149",
+      "chapter": "第三章",
+      "text": "凤霞是个好孩子，我们从砖瓦的*课莅岬矫┪堇*去住，她照样高高兴兴，吃起粗粮来也不往外吐。",
+      "action": "preserved, not guessed or silently corrected"
+    },
+    {
+      "id": "C05-S0092",
+      "chapter": "第五章",
+      "text": "屋顶的茅*荼纠淳*发霉了，加上昨天又下了一场雨，他们怎么也烧不起来。",
+      "action": "preserved, not guessed or silently corrected"
+    },
+    {
+      "id": "C06-S0067",
+      "chapter": "第六章",
+      "text": "” 那一个月的雨下过去后，连着几天的大热天，田里的稻子全烂了，一到晚上，*绱倒*是一片片的臭味，跟死人的味道差不多。",
+      "action": "preserved, not guessed or silently corrected"
+    },
+    {
+      "id": "C06-S0118",
+      "chapter": "第六章",
+      "text": "别人家挖野菜都是蹲下去，她是跪到地上，站起来时身体直打晃，我见了心里不好受*运担* “你就别出门了。",
+      "action": "preserved, not guessed or silently corrected"
+    },
+    {
+      "id": "C06-S0178",
+      "chapter": "第六章",
+      "text": "和王四争地瓜的第二天，家珍拄着根树枝走出了村口，我在田里见了问她去哪*担* “我进城去看看爹。",
+      "action": "preserved, not guessed or silently corrected"
+    },
+    {
+      "id": "C08-S0017",
+      "chapter": "第八章",
+      "text": "坐了一会，他站起来说要*吡耍*想这门亲事算是完了。",
+      "action": "preserved, not guessed or silently corrected"
+    },
+    {
+      "id": "C10-S0154",
+      "chapter": "第十章",
+      "text": "定下来叫它福贵，我左看右看都觉得它像我，心里美滋滋的，后来村里人也开*妓滴颐橇礁龊*像，我嘿嘿笑，心想我早就知道它像我了。",
+      "action": "preserved, not guessed or silently corrected"
+    }
+  ],
+  "baseline_target_segmentation": [
+    "家珍"
+  ],
+  "custom_dictionary": {
+    "家珍": 1000000
+  },
+  "jieba_HMM": false,
+  "stopwords": "Retained in sentences; filtered from collocation output only."
+}

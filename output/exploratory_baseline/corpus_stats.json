@@ -1,0 +1,20 @@
+{
+  "source_sha256": "1b5068f8aad70bc4fa22a86a5cc96f55ea3f02e93ae336c2490beb86d569ecbc",
+  "source_bytes": 275763,
+  "chapters": 10,
+  "cleaned_characters_with_whitespace": 98461,
+  "cleaned_characters_without_whitespace": 86227,
+  "cleaned_han_characters": 74916,
+  "sentences_before_short_filter": 2460,
+  "sentences_kept": 2421,
+  "sentences_excluded_short": 39,
+  "tokens_kept": 52857,
+  "target_raw_string_occurrences": 580,
+  "target_tokens_before_short_filter": 580,
+  "target_tokens_kept": 580,
+  "target_tokens_excluded_short": 0,
+  "target_sentences_kept": 464,
+  "maximum_sentence_tokens": 111,
+  "suspected_corruption_sentences": 12,
+  "sentences_sha256": "d2e595ffe21dec187b1d19b22355bae4c841027ad1665ada34c1692b1b70a21b"
+}

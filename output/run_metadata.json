@@ -1,0 +1,623 @@
+{
+  "python": "3.12.14",
+  "packages": {
+    "qhchina": "0.2.7",
+    "jieba": "0.42.1",
+    "opencc-python-reimplemented": "0.1.7",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6"
+  },
+  "function_signature": "(sentences: collections.abc.Iterable[list[str]], target_words: str | list[str], *, method: str = 'window', horizon: int | tuple | None = None, pooled: bool = False, measures: str | list[str] | None = None, filters: qhchina.analytics.collocations.FilterOptions | None = None, correction: str | None = None, alternative: str = 'greater', sort_by: str = 'obs_local', ascending: bool = False, return_type: str = 'dataframe', max_sentence_length: int | None = 256, batch_words: int = 100000) -> list[dict] | pandas.DataFrame",
+  "sentences_sha256": "b7385145a563d6f7bf312dda960ea6c091bf192ddb6a6b90a64420e1104aaad6",
+  "stopwords_sha256": "f84adc72f665fdfde22b5fe3352777b8df00d6fb6c9b5d42e6ab3524e86c4ba5",
+  "runs": [
+    {
+      "id": "window5",
+      "parameters": {
+        "target_words": "家珍",
+        "method": "window",
+        "alternative": "greater",
+        "filters": {
+          "stopwords": "output/stopwords_used.txt",
+          "min_word_length": 2,
+          "max_p": 0.05
+        },
+        "correction": null,
+        "sort_by": "obs_local",
+        "ascending": false,
+        "max_sentence_length": null,
+        "return_type": "dataframe",
+        "horizon": 5
+      },
+      "rows": 78,
+      "csv_sha256": "395c2414078b927bd96acb1c88da116801d8a7ae390cceef9675b561e5ce7142",
+      "top20": [
+        {
+          "target": "家珍",
+          "collocate": "有庆",
+          "exp_local": 28.380564715581205,
+          "obs_local": 39,
+          "ratio_local": 1.3741798442294075,
+          "obs_global": 325,
+          "p_value": 0.026968321377763727
+        },
+        {
+          "target": "家珍",
+          "collocate": "看到",
+          "exp_local": 15.805791426215993,
+          "obs_local": 23,
+          "ratio_local": 1.4551628184749712,
+          "obs_global": 181,
+          "p_value": 0.04421926923037678
+        },
+        {
+          "target": "家珍",
+          "collocate": "春生",
+          "exp_local": 10.566302555647155,
+          "obs_local": 18,
+          "ratio_local": 1.7035287325157946,
+          "obs_global": 121,
+          "p_value": 0.01782772920840292
+        },
+        {
+          "target": "家珍",
+          "collocate": "家里",
+          "exp_local": 5.938087386644683,
+          "obs_local": 17,
+          "ratio_local": 2.8628746754779324,
+          "obs_global": 68,
+          "p_value": 5.690493117960216e-05
+        },
+        {
+          "target": "家珍",
+          "collocate": "看看",
+          "exp_local": 8.47050700741962,
+          "obs_local": 17,
+          "ratio_local": 2.0069636900257675,
+          "obs_global": 97,
+          "p_value": 0.004226635637664344
+        },
+        {
+          "target": "家珍",
+          "collocate": "城里",
+          "exp_local": 7.771908491343776,
+          "obs_local": 15,
+          "ratio_local": 1.9300278711087184,
+          "obs_global": 89,
+          "p_value": 0.009943735490261174
+        },
+        {
+          "target": "家珍",
+          "collocate": "我娘",
+          "exp_local": 7.0733099752679305,
+          "obs_local": 15,
+          "ratio_local": 2.1206479077614317,
+          "obs_global": 81,
+          "p_value": 0.004095232224986867
+        },
+        {
+          "target": "家珍",
+          "collocate": "坐在",
+          "exp_local": 5.501463314097279,
+          "obs_local": 14,
+          "ratio_local": 2.544777489313718,
+          "obs_global": 63,
+          "p_value": 0.0009051692267314504
+        },
+        {
+          "target": "家珍",
+          "collocate": "床上",
+          "exp_local": 4.715539983511954,
+          "obs_local": 14,
+          "ratio_local": 2.968907070866004,
+          "obs_global": 54,
+          "p_value": 0.00016569504284347225
+        },
+        {
+          "target": "家珍",
+          "collocate": "回到",
+          "exp_local": 3.5803173948887057,
+          "obs_local": 11,
+          "ratio_local": 3.072353310269001,
+          "obs_global": 41,
+          "p_value": 0.0005934832005960455
+        },
+        {
+          "target": "家珍",
+          "collocate": "以后",
+          "exp_local": 3.8422918384171476,
+          "obs_local": 10,
+          "ratio_local": 2.602613341343575,
+          "obs_global": 44,
+          "p_value": 0.003980739655649712
+        },
+        {
+          "target": "家珍",
+          "collocate": "衣服",
+          "exp_local": 4.366240725474031,
+          "obs_local": 10,
+          "ratio_local": 2.2902997403823457,
+          "obs_global": 50,
+          "p_value": 0.010211159687051552
+        },
+        {
+          "target": "家珍",
+          "collocate": "眼泪",
+          "exp_local": 4.802864798021434,
+          "obs_local": 9,
+          "ratio_local": 1.8738816057673742,
+          "obs_global": 55,
+          "p_value": 0.04759045450002508
+        },
+        {
+          "target": "家珍",
+          "collocate": "晚上",
+          "exp_local": 2.7070692497938995,
+          "obs_local": 8,
+          "ratio_local": 2.9552254714610915,
+          "obs_global": 31,
+          "p_value": 0.004249359940558639
+        },
+        {
+          "target": "家珍",
+          "collocate": "告诉",
+          "exp_local": 3.056368507831822,
+          "obs_local": 7,
+          "ratio_local": 2.290299740382346,
+          "obs_global": 35,
+          "p_value": 0.029408793277257872
+        },
+        {
+          "target": "家珍",
+          "collocate": "睡着",
+          "exp_local": 2.270445177246496,
+          "obs_local": 7,
+          "ratio_local": 3.0830958043608505,
+          "obs_global": 26,
+          "p_value": 0.005725794258596095
+        },
+        {
+          "target": "家珍",
+          "collocate": "商量",
+          "exp_local": 0.8732481450948063,
+          "obs_local": 6,
+          "ratio_local": 6.870899221147038,
+          "obs_global": 10,
+          "p_value": 6.808101947093126e-05
+        },
+        {
+          "target": "家珍",
+          "collocate": "实在",
+          "exp_local": 1.7464962901896126,
+          "obs_local": 6,
+          "ratio_local": 3.435449610573519,
+          "obs_global": 20,
+          "p_value": 0.0058486652067316625
+        },
+        {
+          "target": "家珍",
+          "collocate": "呜呜",
+          "exp_local": 1.9211459192085738,
+          "obs_local": 5,
+          "ratio_local": 2.602613341343575,
+          "obs_global": 22,
+          "p_value": 0.037947689472095814
+        },
+        {
+          "target": "家珍",
+          "collocate": "头发",
+          "exp_local": 1.7464962901896126,
+          "obs_local": 5,
+          "ratio_local": 2.8628746754779324,
+          "obs_global": 20,
+          "p_value": 0.025825257454335615
+        }
+      ]
+    },
+    {
+      "id": "window10",
+      "parameters": {
+        "target_words": "家珍",
+        "method": "window",
+        "alternative": "greater",
+        "filters": {
+          "stopwords": "output/stopwords_used.txt",
+          "min_word_length": 2,
+          "max_p": 0.05
+        },
+        "correction": null,
+        "sort_by": "obs_local",
+        "ascending": false,
+        "max_sentence_length": null,
+        "return_type": "dataframe",
+        "horizon": 10
+      },
+      "rows": 107,
+      "csv_sha256": "25c48b1dc39f286be448ea246698244fb26d06b364b3a94da8a624d669864c56",
+      "top20": [
+        {
+          "target": "家珍",
+          "collocate": "凤霞",
+          "exp_local": 65.19748557295961,
+          "obs_local": 96,
+          "ratio_local": 1.472449422801293,
+          "obs_global": 461,
+          "p_value": 5.5202430360723476e-05
+        },
+        {
+          "target": "家珍",
+          "collocate": "有庆",
+          "exp_local": 45.96352019785655,
+          "obs_local": 60,
+          "ratio_local": 1.3053830459834541,
+          "obs_global": 325,
+          "p_value": 0.017789332118527734
+        },
+        {
+          "target": "家珍",
+          "collocate": "眼睛",
+          "exp_local": 12.869785655399836,
+          "obs_local": 24,
+          "ratio_local": 1.8648329228335057,
+          "obs_global": 91,
+          "p_value": 0.0015438229798028225
+        },
+        {
+          "target": "家珍",
+          "collocate": "看看",
+          "exp_local": 13.718342951360263,
+          "obs_local": 23,
+          "ratio_local": 1.6765873313962747,
+          "obs_global": 97,
+          "p_value": 0.007913507313641266
+        },
+        {
+          "target": "家珍",
+          "collocate": "城里",
+          "exp_local": 12.586933223413025,
+          "obs_local": 21,
+          "ratio_local": 1.6683968705687404,
+          "obs_global": 89,
+          "p_value": 0.011444580422820816
+        },
+        {
+          "target": "家珍",
+          "collocate": "家里",
+          "exp_local": 9.616982687551525,
+          "obs_local": 21,
+          "ratio_local": 2.183637080597322,
+          "obs_global": 68,
+          "p_value": 0.00031529916252792667
+        },
+        {
+          "target": "家珍",
+          "collocate": "我娘",
+          "exp_local": 11.455523495465787,
+          "obs_local": 21,
+          "ratio_local": 1.83317680840269,
+          "obs_global": 81,
+          "p_value": 0.0036661061848614063
+        },
+        {
+          "target": "家珍",
+          "collocate": "衣服",
+          "exp_local": 7.071310799670239,
+          "obs_local": 20,
+          "ratio_local": 2.8283299329641505,
+          "obs_global": 50,
+          "p_value": 6.381266052679635e-06
+        },
+        {
+          "target": "家珍",
+          "collocate": "坐在",
+          "exp_local": 8.909851607584502,
+          "obs_local": 18,
+          "ratio_local": 2.0202356664029644,
+          "obs_global": 63,
+          "p_value": 0.0022072841797661225
+        },
+        {
+          "target": "家珍",
+          "collocate": "床上",
+          "exp_local": 7.637015663643858,
+          "obs_local": 17,
+          "ratio_local": 2.2260004102032664,
+          "obs_global": 54,
+          "p_value": 0.0008934431981614255
+        },
+        {
+          "target": "家珍",
+          "collocate": "回到",
+          "exp_local": 5.798474855729596,
+          "obs_local": 16,
+          "ratio_local": 2.7593462760625855,
+          "obs_global": 41,
+          "p_value": 7.571536585349037e-05
+        },
+        {
+          "target": "家珍",
+          "collocate": "觉得",
+          "exp_local": 8.626999175597692,
+          "obs_local": 16,
+          "ratio_local": 1.8546425789928853,
+          "obs_global": 61,
+          "p_value": 0.009259803353469542
+        },
+        {
+          "target": "家珍",
+          "collocate": "眼泪",
+          "exp_local": 7.778441879637263,
+          "obs_local": 15,
+          "ratio_local": 1.928406772475557,
+          "obs_global": 55,
+          "p_value": 0.007927983711770725
+        },
+        {
+          "target": "家珍",
+          "collocate": "一点",
+          "exp_local": 5.515622423742786,
+          "obs_local": 13,
+          "ratio_local": 2.356941610803459,
+          "obs_global": 39,
+          "p_value": 0.001968132272261114
+        },
+        {
+          "target": "家珍",
+          "collocate": "晚上",
+          "exp_local": 4.384212695795548,
+          "obs_local": 12,
+          "ratio_local": 2.737093483513694,
+          "obs_global": 31,
+          "p_value": 0.000646732637370695
+        },
+        {
+          "target": "家珍",
+          "collocate": "以后",
+          "exp_local": 6.222753503709811,
+          "obs_local": 11,
+          "ratio_local": 1.7677062081025938,
+          "obs_global": 44,
+          "p_value": 0.03923532871680502
+        },
+        {
+          "target": "家珍",
+          "collocate": "田里",
+          "exp_local": 5.939901071723001,
+          "obs_local": 11,
+          "ratio_local": 1.8518826942027176,
+          "obs_global": 42,
+          "p_value": 0.02852031121541021
+        },
+        {
+          "target": "家珍",
+          "collocate": "回去",
+          "exp_local": 5.232769991755977,
+          "obs_local": 10,
+          "ratio_local": 1.9110337384892908,
+          "obs_global": 37,
+          "p_value": 0.029223098488007193
+        },
+        {
+          "target": "家珍",
+          "collocate": "头发",
+          "exp_local": 2.828524319868096,
+          "obs_local": 8,
+          "ratio_local": 2.82832993296415,
+          "obs_global": 20,
+          "p_value": 0.004087692239491791
+        },
+        {
+          "target": "家珍",
+          "collocate": "心疼",
+          "exp_local": 2.687098103874691,
+          "obs_local": 8,
+          "ratio_local": 2.9771894031201582,
+          "obs_global": 19,
+          "p_value": 0.0027960627112858516
+        }
+      ]
+    },
+    {
+      "id": "sentence",
+      "parameters": {
+        "target_words": "家珍",
+        "method": "sentence",
+        "alternative": "greater",
+        "filters": {
+          "stopwords": "output/stopwords_used.txt",
+          "min_word_length": 2,
+          "max_p": 0.05
+        },
+        "correction": null,
+        "sort_by": "obs_local",
+        "ascending": false,
+        "max_sentence_length": null,
+        "return_type": "dataframe"
+      },
+      "rows": 141,
+      "csv_sha256": "1482e840a01aba136ae93eb99e560b531c0024d19a155017776c6b596c5831f3",
+      "top20": [
+        {
+          "target": "家珍",
+          "collocate": "凤霞",
+          "exp_local": 68.0696806304438,
+          "obs_local": 116,
+          "ratio_local": 1.704136098856906,
+          "obs_global": 356,
+          "p_value": 3.176092722156909e-11
+        },
+        {
+          "target": "家珍",
+          "collocate": "有庆",
+          "exp_local": 52.964330153463294,
+          "obs_local": 79,
+          "ratio_local": 1.4915698880944737,
+          "obs_global": 277,
+          "p_value": 3.4644963847418886e-05
+        },
+        {
+          "target": "家珍",
+          "collocate": "心里",
+          "exp_local": 20.07673164661966,
+          "obs_local": 31,
+          "ratio_local": 1.5440760252040078,
+          "obs_global": 105,
+          "p_value": 0.005679564153886485
+        },
+        {
+          "target": "家珍",
+          "collocate": "看看",
+          "exp_local": 17.01742015761095,
+          "obs_local": 29,
+          "ratio_local": 1.704136098856906,
+          "obs_global": 89,
+          "p_value": 0.0014526057845002383
+        },
+        {
+          "target": "家珍",
+          "collocate": "我娘",
+          "exp_local": 14.914143508917462,
+          "obs_local": 28,
+          "ratio_local": 1.8774125368485455,
+          "obs_global": 78,
+          "p_value": 0.00029985676304433717
+        },
+        {
+          "target": "家珍",
+          "collocate": "眼睛",
+          "exp_local": 16.63500622148486,
+          "obs_local": 26,
+          "ratio_local": 1.562969057770464,
+          "obs_global": 87,
+          "p_value": 0.009235559324691667
+        },
+        {
+          "target": "家珍",
+          "collocate": "城里",
+          "exp_local": 16.061385317295727,
+          "obs_local": 25,
+          "ratio_local": 1.5565282512137177,
+          "obs_global": 84,
+          "p_value": 0.01120257331783725
+        },
+        {
+          "target": "家珍",
+          "collocate": "家里",
+          "exp_local": 13.002073828287017,
+          "obs_local": 25,
+          "ratio_local": 1.922770192675769,
+          "obs_global": 68,
+          "p_value": 0.0004156111386669492
+        },
+        {
+          "target": "家珍",
+          "collocate": "回来",
+          "exp_local": 14.722936540854418,
+          "obs_local": 22,
+          "ratio_local": 1.4942671211651688,
+          "obs_global": 77,
+          "p_value": 0.026915212105395825
+        },
+        {
+          "target": "家珍",
+          "collocate": "坐在",
+          "exp_local": 11.472418083782662,
+          "obs_local": 22,
+          "ratio_local": 1.9176428054953003,
+          "obs_global": 60,
+          "p_value": 0.0009594867926731032
+        },
+        {
+          "target": "家珍",
+          "collocate": "衣服",
+          "exp_local": 8.413106594773952,
+          "obs_local": 22,
+          "ratio_local": 2.6149674620390457,
+          "obs_global": 44,
+          "p_value": 3.0986900526216023e-06
+        },
+        {
+          "target": "家珍",
+          "collocate": "眼泪",
+          "exp_local": 10.325176275404397,
+          "obs_local": 20,
+          "ratio_local": 1.9370129348437373,
+          "obs_global": 54,
+          "p_value": 0.001407806053148608
+        },
+        {
+          "target": "家珍",
+          "collocate": "床上",
+          "exp_local": 9.369141435089174,
+          "obs_local": 19,
+          "ratio_local": 2.0279339501527294,
+          "obs_global": 49,
+          "p_value": 0.000970580297431467
+        },
+        {
+          "target": "家珍",
+          "collocate": "觉得",
+          "exp_local": 11.090004147656574,
+          "obs_local": 19,
+          "ratio_local": 1.7132545440945472,
+          "obs_global": 58,
+          "p_value": 0.008800435403597318
+        },
+        {
+          "target": "家珍",
+          "collocate": "回到",
+          "exp_local": 7.839485690584819,
+          "obs_local": 17,
+          "ratio_local": 2.168509602666526,
+          "obs_global": 41,
+          "p_value": 0.0007309074880536004
+        },
+        {
+          "target": "家珍",
+          "collocate": "一点",
+          "exp_local": 7.074657818332642,
+          "obs_local": 13,
+          "ratio_local": 1.8375447030544645,
+          "obs_global": 37,
+          "p_value": 0.015447210788183896
+        },
+        {
+          "target": "家珍",
+          "collocate": "力气",
+          "exp_local": 6.309829946080464,
+          "obs_local": 13,
+          "ratio_local": 2.0602773943337938,
+          "obs_global": 33,
+          "p_value": 0.005225873155314864
+        },
+        {
+          "target": "家珍",
+          "collocate": "晚上",
+          "exp_local": 5.927416009954376,
+          "obs_local": 13,
+          "ratio_local": 2.1931985165488768,
+          "obs_global": 31,
+          "p_value": 0.002731812046083748
+        },
+        {
+          "target": "家珍",
+          "collocate": "回家",
+          "exp_local": 7.074657818332642,
+          "obs_local": 12,
+          "ratio_local": 1.6961951105118134,
+          "obs_global": 37,
+          "p_value": 0.036950970223273316
+        },
+        {
+          "target": "家珍",
+          "collocate": "头发",
+          "exp_local": 3.632932393197843,
+          "obs_local": 10,
+          "ratio_local": 2.752597328462153,
+          "obs_global": 19,
+          "p_value": 0.0010444084765819435
+        }
+      ]
+    }
+  ]
+}
