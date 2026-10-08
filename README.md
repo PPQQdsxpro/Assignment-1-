@@ -1,6 +1,6 @@
 # 《活着》家珍搭配詞分析
 
-作者：余華。語料：教師提供的《活着》UTF-8 全文，沒有可分享的獨立來源網址。原檔末尾的 http://www.ixdzs.com 及 http://m.ixdzs.com 僅為檔案內附線索，未核實為實際下載來源。原文保存在 data/huozhe_original.txt。
+作者：余華。語料：教師提供的《活着》UTF-8 全文。原文保存在 data/huozhe_original.txt。
 
 研究以「家珍」為目標，比較左右各五詞、十詞與句子法。使用 OpenCC 簡體正規化、jieba 分詞、qhchina Fisher 單尾 greater 檢定；候選詞至少兩字、排除停用詞、p < 0.05，按觀察共現次數排序。三組合格結果分別有 78、107、141 列。
 
@@ -19,6 +19,6 @@ report.pdf 是學生修改後提供的原始 PDF；report.md 由該 PDF 轉寫�
 
 ## AI 使用聲明
 
-使用 Codex 協助程式、統計核對、資料整理、原文定位及論證補充，並依學生閱讀筆記整合撰寫初稿；學生其後修改 PDF，最終以學生提供版本為準。報告含 AI 協助生成及補充的文字與論點。統計由 Python 實際執行，未使用 GLM-5.3-Flash。
+使用 Codex 協助程式、統計核對、資料整理及論證補充，並依學生筆記整合撰寫初稿；本人其後加以修改。報告含 AI 協助生成及補充的文字與論點。統計由 Python 實際執行，未使用 GLM-5.3-Flash。
 
 方法文件：https://www.qhchina.org/docs/collocations/find-collocates/ 及 https://www.qhchina.org/docs/helpers/load-stopwords/ 。
