@@ -2,7 +2,7 @@
 
 CHI3242 作業 1。語料為余華《活着》，研究「家珍」姓名的搭配詞與人物空間。
 
-**目前狀態：程式、三組正式結果、比較頁與閱讀材料已完成；report.md / report.pdf 為待學生完成分析的草稿，不是最終提交稿。**
+**目前狀態：程式、三組結果及完整報告已完成。報告整合學生閱讀筆記與 Codex 補充撰寫，已列明 AI 使用範圍；提交前需由學生確認內容。尚未提交 Moodle。**
 
 ## 語料來源
 
@@ -86,4 +86,7 @@ python render_report.py
 - https://www.qhchina.org/docs/helpers/load-stopwords/
 - https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.fisher_exact.html
 
+
+
+本篇完整報告由 Codex 依學生筆記與後續討論整合撰寫，含 AI 補充的論點與文字，詳見 report.md 末尾聲明。
 

@@ -31,7 +31,7 @@ def main():
     else:
         pdfmetrics.registerFont(UnicodeCIDFont('MSung-Light'));font='MSung-Light'
     pdfmetrics.registerFontFamily(font,normal=font,bold=font,italic=font,boldItalic=font)
-    base=ParagraphStyle('Body',fontName=font,fontSize=10.5,leading=17,spaceAfter=9,wordWrap='CJK',textColor=colors.HexColor('#243b36'))
+    base=ParagraphStyle('Body',fontName=font,fontSize=10.5,leading=17,spaceAfter=9,wordWrap='CJK',allowWidows=0,allowOrphans=0,textColor=colors.HexColor('#243b36'))
     h1=ParagraphStyle('Title',parent=base,fontSize=19,leading=28,spaceAfter=20)
     h2=ParagraphStyle('Heading',parent=base,fontSize=13,leading=21,spaceBefore=13,spaceAfter=8,keepWithNext=True)
     note=ParagraphStyle('Note',parent=base,fontSize=9.5,leading=15,backColor=colors.HexColor('#fff0d7'),borderPadding=8,spaceAfter=14)
